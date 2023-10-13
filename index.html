@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-fla.webp" type="image/x-icon">
+    <title>FlaNatics</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="light">
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h1 class="m-0"><img src="assets/logo-fla-svg.svg" alt="Logo" class="d-block logo__tam">
+                    </h1>
+                </a>
+
+                <div class="offcanvas offcanvas-end bg-black off__tam" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5><img src="./assets/logo-fla-svg.svg" class="logo__tam" alt="logo FlaNatics"></h5>
+                        <button type="button" class="btn-close btn-close-white fs-5 ms-auto fechar"
+                            data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav me-auto" data-bs-toggle="offcanvas">
+                            <li class="nav-item">
+                                <a class="nav-link cor__home" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cor__letras-nav" href="#categoria">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cor__letras-nav" href="#promocao">Promoções</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link cor__letras-nav" href="#novidade">Novidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input cursor__add" type="checkbox" role="switch"
+                                            id="modo-noturno">
+                                        <label class="form-check-label cursor__add d-lg-none" for="modo-noturno">Modo
+                                            Noturno</label>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center ms-auto">
+                    <div class="nav-item dropdown cor__setinha" id="pesquisarDropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-search fs-4 text-white">
+                                <span
+                                    class="fs-6 fst-normal cor__home pesquisar__nome d-none d-lg-inline">Pesquisar</span>
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu posicao__dropdown rounded-0" aria-labelledby="pesquisarDropdownLink">
+                            <li>
+                                <form class="d-flex pesquisa__tam" role="search" action="https://www.google.com/search"
+                                    method="GET" target="_blank">
+                                    <input class="form-control rounded-0" type="search" name="q"
+                                        placeholder="Digite o produto" aria-label="Pesquisar">
+                                    <button class="btn botao__search rounded-0" type="submit">Buscar</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item posicao__carrinho">
+                        <a class="nav-link" href="#"><i class="bi bi-cart4 text-white perfil__tam"><span
+                                    class="fs-6 fst-normal cor__home posicao__nome-carrinho d-none d-lg-inline">Carrinho</span></i>
+                        </a>
+                    </div>
+                    <div class="nav-item posicao__perfil">
+                        <a class="nav-link" href="#"><i class="bi bi-person-fill text-white perfil__tam"><span
+                                    class="fs-6 fst-normal cor__home posicao__nome-carrinho d-none d-lg-inline">Meu
+                                    Perfil</span></i>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide pt-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner pt-2">
+                    <div class="carousel-item active pt-3">
+                        <img src="assets/Mobile/mobile-banner-3.png"
+                            alt="Gabigol, Everton Ribeiro e Pedro, vestindo o novo Manto dois"
+                            class="w-100 img-fluid d-md-none">
+                        <img src="assets/Desktop/desktop-banner-3.png"
+                            alt="Gabigol, Everton Ribeiro e Pedro, vestindo o novo Manto dois"
+                            class="w-100 img-fluid d-none d-md-block d-xl-none">
+                        <img src="assets/Desktop/desktop-banner-3.png"
+                            alt="Gabigol, Everton Ribeiro e Pedro, vestindo o novo Manto dois"
+                            class="w-100 d-none d-xl-block">
+                    </div>
+                    <div class="carousel-item pt-3">
+                        <img src="assets/Mobile/mobile-banner-2.webp" alt="3 Mantos 2023, confira nossos descontos"
+                            class="w-100 img-fluid d-md-none">
+                        <img src="assets/Desktop/desktop-banner-2.png" alt="3 Mantos 2023, confira nossos descontos"
+                            class="w-100 img-fluid d-none d-md-block d-xl-none">
+                        <img src="assets/Desktop/desktop-banner-2.png" alt="3 Mantos 2023, confira nossos descontos"
+                            class="w-100 img-fluid d-none d-xl-block">
+                        <div class="carousel-caption">
+                            <h5 class="fs-1"></h5>
+                            <p class="fs-4"></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item pt-3">
+                        <img src="assets/Mobile/mobile-banner-1.png"
+                            alt="Gabigol com o manto branco e promoção de 45% de desconto"
+                            class="w-100 img-fluid d-md-none">
+                        <img src="assets/Desktop/desktop-banner-1.png"
+                            alt="Gabigol com o manto branco e promoção de 45% de desconto"
+                            class="w-100 img-fluid d-none d-md-block d-xl-none">
+                        <img src="assets/Desktop/desktop-banner-1.png"
+                            alt="Gabigol com o manto branco e promoção de 45% de desconto"
+                            class="w-100 img-fluid d-none d-xl-block">
+                        <div class="carousel-caption">
+                            <h5 class="fs-1"></h5>
+                            <p class="fs-4"></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="categoria">
+            <h2 class="text-center my-4 my-xl-5">Busque por categoria:</h2>
+            <div class="container row mx-auto g-4 mb-4">
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/masculino.webp"
+                            alt="Modelo masculino com blusa vermelha e preta do flamengo" class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Masculino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/feminino.jpg" alt="Modelo feminina com blusa branca do flamengo"
+                            class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Feminino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/infantil.webp"
+                            alt="Modelo infantil com blusa vermelha e preta do flamengo e short branco do flamengo"
+                            class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Infantil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/chinelo.webp" alt="chinelo do flamengo" class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Chinelos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/mochila.webp" alt="Mochila vermelha do flamengo"
+                            class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Mochilas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="card rounded-0 border-0 cursor__add">
+                        <img src="assets/categorias/bone.webp" alt="boné do flamengo com nome de Zico"
+                            class="w-100 d-block">
+                        <div class="card-header categoria__estilo">
+                            <p class="text-center card-text">Bonés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promocao">
+            <h2 class="text-center my-3 espaco my-xl-5 mt-5 mb-4">Produtos que estão na PROMOÇÃO!</h2>
+            <div class="container row mx-auto g-4 mb-5">
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/infantil-conjunto.jpg"
+                            alt="modelo infantil com conjunto preto do flamengo da Reserva" class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Conjunto do Mengão Reserva</h5>
+                            <p class="card-text">Camiseta mini + Bermuda mini moletom Flamengo. Conjunto atemporal e
+                                autêntico.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 240,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-camiseta">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Modal-camiseta" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header bg-black">
+                                <div class="d-flex align-items-center">
+                                    <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                    <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                        sobre o produto</h1>
+                                </div>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Fechar"></button>
+                            </div>
+                            <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                <div>
+                                    <img src="assets/produtos/infantil-conjunto.jpg"
+                                        alt="modelo infantil com conjunto preto do flamengo da Reserva"
+                                        class="w-100 pb-4 d-md-none d-block">
+                                    <img src="assets/produtos/infantil-conjunto.jpg"
+                                        alt="modelo infantil com conjunto preto do flamengo da Reserva"
+                                        class="w-100 pe-4 d-none d-md-block">
+                                </div>
+                                <div>
+                                    <h5 class="fs-6 mb-3 mt-lg-0">Conjunto do Mengão da Reserva</h5>
+                                    <p class="border-bottom border-black pb-3 texto__menor">Camiseta mini estampada pica
+                                        pau
+                                        urubu 100% algodão + Bermuda mini moletom Flamengo edição
+                                        exclusiva.
+                                    </p>
+                                    <h5 class="fw-medium">R$ 240,00</h5>
+                                    <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                        Reserva
+                                    </p>
+                                    <p class="texto__menor fw-bolder">Cores:</p>
+                                    <div class="input__flex border-bottom pb-2">
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input branco-gelo cursor__add" type="radio"
+                                                    name="check-infantil-cor" id="branco1" value="option1">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="branco1">
+                                                    Offwhite
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input bg-black cursor__add" type="radio"
+                                                    name="check-infantil-cor" id="preto2" value="option2">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="preto2">
+                                                    Preto
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="texto__menor fw-bolder mt-3">Tamanho:</p>
+                                    <div class="input__flex">
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input cursor__add" type="radio"
+                                                    name="check-infantil-tam" id="i04" value="option1">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="i04">
+                                                    04
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input cursor__add" type="radio"
+                                                    name="check-infantil-tam" id="i06" value="option2">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="i06">
+                                                    06
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input cursor__add" type="radio"
+                                                    name="check-infantil-tam" id="i08" value="option3">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="i08">
+                                                    08
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input cursor__add" type="radio"
+                                                    name="check-infantil-tam" id="i10" value="option4">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="i10">
+                                                    10
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <div class="input__posicao">
+                                                <input class="form-check-input cursor__add" type="radio"
+                                                    name="check-infantil-tam" id="i12" value="option5">
+                                                <label class="form-check-label texto__menor label__posicao cursor__add"
+                                                    for="i12">
+                                                    12
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn botao-red text-white rounded-0"
+                                            data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                            sacola</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/chinelo-kenner.jpg" alt="chinelo kanner do flamengo preto"
+                            class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Chinelo Kenner do Flamengo</h5>
+                            <p class="card-text">Esportiva, impactante e garantia de máximo conforto é com a Sandália
+                                Kenner
+                                X-Gel Flamengo Masculina.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 170,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-calca">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal-calca" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                            sobre o produto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                    <div>
+                                        <img src="assets/produtos/chinelo-kenner.jpg"
+                                            alt="chinelo kanner do flamengo preto" class="w-100 pb-4 d-md-none d-block">
+                                        <img src="assets/produtos/chinelo-kenner.jpg"
+                                            alt="chinelo kanner do flamengo preto" class="w-100 pe-4 d-none d-md-block">
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-3 mt-lg-0">Chinelo Kenner do Flamengo</h5>
+                                        <p class="border-bottom border-black pb-3 texto__menor">Cabedal robusto preto
+                                            com
+                                            revestimento interno em neoprene preto, peça lateral externa em gel
+                                            vermelha.Palmilha extra macia preta com silk exclusivo na cor vermelha,
+                                            amortecedor HP gel preto e entressola branca.
+                                        </p>
+                                        <h5 class="fw-medium">R$ 170,00</h5>
+                                        <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                            Kenner
+                                        </p>
+                                        <p class="texto__menor fw-bolder">Cores:</p>
+                                        <div class="input__flex border-bottom pb-2">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input botao-red cursor__add" type="radio"
+                                                        name="check-chinelo-cor" id="2vermelho" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="2vermelho">
+                                                        Vermelho
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input branco-gelo cursor__add" type="radio"
+                                                        name="check-chinelo-cor" id="2branco" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="2branco">
+                                                        Branco
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input bg-black cursor__add" type="radio"
+                                                        name="check-chinelo-cor" id="2preto" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="2preto">
+                                                        Preto
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="texto__menor fw-bolder mt-3">Numeração:</p>
+                                        <div class="input__flex">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-chinelo-tam" id="c36" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="c36">
+                                                        36
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-chinelo-tam" id="c38" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="c38">
+                                                        38
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-chinelo-tam" id="c39" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="c39">
+                                                        39
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-chinelo-tam" id="c40" value="option4">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="c40">
+                                                        40
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-chinelo-tam" id="c42" value="option5">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="c42">
+                                                        42
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn botao-red text-white rounded-0"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                                sacola</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/feminino-manto3.jpg"
+                            alt="modelo feminina com terceiro uniforme do flamengo preto" class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Manto Flamengo Feminina 3 Adidas</h5>
+                            <p class="card-text">Terceiro uniforme do Flamengo mantém as torcedoras
+                                confortáveis em todos os momentos.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 240,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-feminino">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal-feminino" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                            sobre o produto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                    <div>
+                                        <img src="assets/produtos/feminino-manto3.jpg"
+                                            alt="modelo feminina com terceiro uniforme do flamengo preto"
+                                            class="w-100 pb-4 d-md-none d-block">
+                                        <img src="assets/produtos/feminino-manto3.jpg"
+                                            alt="modelo feminina com terceiro uniforme do flamengo preto"
+                                            class="w-100 pe-4 d-none d-md-block">
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-3 mt-lg-0">Manto Flamengo Feminina 3 Adidas</h5>
+                                        <p class="border-bottom border-black pb-3 texto__menor">Por trás do design
+                                            atemporal, o tecido AEROREADY que remove o suor garante a autoconfiança, não
+                                            importa o que aconteça no campo de futebol. Feito 100% de materiais
+                                            reciclados,
+                                            este produto representa apenas uma das nossas soluções para ajudar a acabar
+                                            com
+                                            os resíduos plásticos.
+                                        </p>
+                                        <h5 class="fw-medium">R$ 240,00</h5>
+                                        <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                            Adidas
+                                        </p>
+                                        <p class="texto__menor fw-bolder">Cores:</p>
+                                        <div class="input__flex border-bottom pb-2">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input bg-black cursor__add" type="radio"
+                                                        name="check-feminino-cor" id="3preto" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="3preto">
+                                                        Preto
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="texto__menor fw-bolder mt-3">Tamanho:</p>
+                                        <div class="input__flex">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-feminino-tam" id="fpp" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="fpp">
+                                                        PP
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-feminino-tam" id="fp" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="fp">
+                                                        P
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-feminino-tam" id="fm" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="fm">
+                                                        M
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-feminino-tam" id="fg" value="option4">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="fg">
+                                                        G
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-feminino-tam" id="fgg" value="option5">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="fgg">
+                                                        GG
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn botao-red text-white rounded-0"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                                sacola</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/masculino-manto-treino.jpg"
+                            alt="modelo masculino com uniforme pré treino do flamengo vermelho" class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Manto Flamengo Pré Jogo Adidas</h5>
+                            <p class="card-text">A escolha perfeita para quem busca conforto demonstrando todo seu amor
+                                pelo
+                                Mengão.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 250,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-masculino">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal-masculino" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                            sobre o produto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                    <div>
+                                        <img src="assets/produtos/masculino-manto-treino.jpg"
+                                            alt="modelo masculino com uniforme pré treino do flamengo vermelho"
+                                            class="w-100 pb-4 d-md-none d-block">
+                                        <img src="assets/produtos/masculino-manto-treino.jpg"
+                                            alt="modelo masculino com uniforme pré treino do flamengo vermelho"
+                                            class="w-100 pe-4 d-none d-md-block">
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-3 mt-lg-0">Manto Flamengo Pré Jogo Adidas</h5>
+                                        <p class="border-bottom border-black pb-3 texto__menor">Comemorando uma década
+                                            com a
+                                            adidas. Usada pelos jogadores antes dos jogos, esta camisa de futebol do CR
+                                            Flamengo exibe uma mistura dos designs anteriores dos uniformes de jogo.
+                                        </p>
+                                        <h5 class="fw-medium">R$ 250,00</h5>
+                                        <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                            Adidas
+                                        </p>
+                                        <p class="texto__menor fw-bolder">Cores:</p>
+                                        <div class="input__flex border-bottom pb-2">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input botao-red cursor__add" type="radio"
+                                                        name="check-masculino-cor" id="4vermelho" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="4vermelho">
+                                                        Vermelho
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="texto__menor fw-bolder mt-3">Tamanho:</p>
+                                        <div class="input__flex">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-masculino-tam" id="mpp" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mpp">
+                                                        PP
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-masculino-tam" id="mp" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mp">
+                                                        P
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-masculino-tam" id="mm" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mm">
+                                                        M
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-masculino-tam" id="mg" value="option4">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mg">
+                                                        G
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-masculino-tam" id="mgg" value="option5">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mgg">
+                                                        GG
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn botao-red text-white rounded-0"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                                sacola</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/feminino-legging.jpg"
+                            alt="calça legging feminina da adidas preta do flamengo" class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Legging Flamengo Feminina Adidas</h5>
+                            <p class="card-text">Represente o Flamengo. Esta calça legging de futebol adidas garante o
+                                conforto em movimento.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 220,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-legging">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal-legging" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                            sobre o produto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                    <div>
+                                        <img src="assets/produtos/feminino-legging.jpg"
+                                            alt="calça legging feminina da adidas preta do flamengo"
+                                            class="w-100 pb-4 d-md-none d-block">
+                                        <img src="assets/produtos/feminino-legging.jpg"
+                                            alt="calça legging feminina da adidas preta do flamengo"
+                                            class="w-100 pe-4 d-none d-md-block">
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-3 mt-lg-0">Calça Legging Flamengo Feminina Adidas</h5>
+                                        <p class="border-bottom border-black pb-3 texto__menor"> Um escudo serigrafado
+                                            evidencia para quem vai a sua torcida. Produzida com conteúdo reciclado e
+                                            controle de suor para as fãs do CR Flamengo Modelagem justa Cintura elástica
+                                            média Malha interlock 73% poliéster reciclado, 27% elastano Tecido AEROREADY
+                                            para remoção do suor.
+                                        </p>
+                                        <h5 class="fw-medium">R$ 220,00</h5>
+                                        <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                            Adidas
+                                        </p>
+                                        <p class="texto__menor fw-bolder">Cores:</p>
+                                        <div class="input__flex border-bottom pb-2">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input bg-black cursor__add" type="radio"
+                                                        name="check-legging-cor" id="5preto" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="5preto">
+                                                        Preto
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="texto__menor fw-bolder mt-3">Numeração:</p>
+                                        <div class="input__flex">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-legging-tam" id="l34" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="l34">
+                                                        34
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-legging-tam" id="l36" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="l36">
+                                                        36
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-legging-tam" id="l38" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="l38">
+                                                        38
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-legging-tam" id="l40" value="option4">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="l40">
+                                                        40
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-legging-tam" id="l42" value="option5">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="l42">
+                                                        42
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn botao-red text-white rounded-0"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                                sacola</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4">
+                    <div class="card rounded-0 border-1">
+                        <img src="assets/produtos/moletom-preto.jpg"
+                            alt="Léo Pereira com moletom da reserva preto do flamengo" class="w-100 d-block">
+                        <div class="card-body">
+                            <h5 class="card-title">Moletom Flamengo Reserva</h5>
+                            <p class="card-text">Para todo rubro-negro que se orgulha de
+                                uma das maiores conquistas da história do Mengão.
+                            </p>
+                            <p class="fs-6 fw-bold">R$ 410,00</p>
+                            <button type="button" class="btn botao-red rounded-0 border-0 text-light"
+                                data-bs-toggle="modal" data-bs-target="#Modal-casaco">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal-casaco" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-black">
+                                    <div class="d-flex align-items-center">
+                                        <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Confira detalhes
+                                            sobre o produto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                        aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body d-sm-flex flex-sm-column d-lg-grid model__posicao">
+                                    <div>
+                                        <img src="assets/produtos/moletom-preto.jpg"
+                                            alt="Léo Pereira com moletom da reserva preto do flamengo"
+                                            class="w-100 pb-4 d-md-none d-block">
+                                        <img src="assets/produtos/moletom-preto.jpg"
+                                            alt="Léo Pereira com moletom da reserva preto do flamengo"
+                                            class="w-100 pe-4 d-none d-md-block">
+                                    </div>
+                                    <div>
+                                        <h5 class="fs-6 mb-3 mt-lg-0">Moletom Flamengo Reserva</h5>
+                                        <p class="border-bottom border-black pb-3 texto__menor"> Em moletom, a peça traz
+                                            um
+                                            brasão estampado na parte da frente, que faz menção à conquista do título.
+                                            No
+                                            detalhe, o capuz tem uma etiqueta vermelha e preta, com o Pica-Pau da
+                                            Reserva.
+                                            Casaco produzido eticamente no Brasil.
+                                        </p>
+                                        <h5 class="fw-medium">R$ 410,00</h5>
+                                        <p class="texto__menor cinza-claro border-bottom pb-3">Vendido e entregue por
+                                            Adidas
+                                        </p>
+                                        <p class="texto__menor fw-bolder">Cores:</p>
+                                        <div class="input__flex border-bottom pb-2">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input bg-black cursor__add" type="radio"
+                                                        name="check-moletom-cor" id="6preto" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="6preto">
+                                                        Preto
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="texto__menor fw-bolder mt-3">Tamanho:</p>
+                                        <div class="input__flex">
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-moletom-tam" id="mopp" value="option1">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mopp">
+                                                        PP
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-moletom-tam" id="mop" value="option2">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mop">
+                                                        P
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-moletom-tam" id="mom" value="option3">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mom">
+                                                        M
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-moletom-tam" id="mog" value="option4">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mog">
+                                                        G
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-check form-check-inline">
+                                                <div class="input__posicao">
+                                                    <input class="form-check-input cursor__add" type="radio"
+                                                        name="check-moletom-tam" id="mogg" value="option5">
+                                                    <label
+                                                        class="form-check-label texto__menor label__posicao cursor__add"
+                                                        for="mogg">
+                                                        GG
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn botao-red text-white rounded-0"
+                                                data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Adicionar à
+                                                sacola</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pb-5 pt-4 bg-black text-bg-dark">
+            <h2 class="text-center py-3 pe-2 ps-2">Conheça todas as nossas facilidades</h2>
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 px-3">
+                <div class="divs__posicao d-flex align-items-center">
+                    <div><i class="cor-detalhes icone__tam bi bi-x-diamond"></i></div>
+                    <div>
+                        <div class="cor-detalhes divs__titulo ms-3">PAGUE PELO PIX</div>
+                        <div class="texto__menor ms-3">Ganhe 10% OFF em pagamentos via PIX</div>
+                    </div>
+                </div>
+                <div class="divs__posicao d-flex">
+                    <div><i class="cor-detalhes icone__tam bi bi-arrow-repeat"></i></div>
+                    <div>
+                        <div class="cor-detalhes divs__titulo ms-3 mt-4">TROCA GRÁTIS</div>
+                        <div class="texto__menor ms-3">Fique livre para trocar em até 30 dias.</div>
+                    </div>
+                </div>
+                <div class="cor-detalhes divs__posicao d-flex">
+                    <div><i class="cor-detalhes icone__tam bi bi-person"></i></div>
+                    <div>
+                        <div class="cor-detalhes divs__titulo ms-3 mt-4">QUALIDADE NO ATENDIMENTO</div>
+                        <div class="texto__menor ms-3 text-light">Atendimento profissional 24h por dia e sem demora.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container p-3 p-md-5 ps-xl-5 pe-xl-5" id="novidade">
+            <form
+                class="container border border-black border-3 div__novidade my-4 p-md-5 p-xl-5 my-xl-3 p-4 text-center mx-auto">
+                <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
+                <div class="input-group my-3">
+                    <input type="email" class="form-control border-secondary rounded-0" id="email-cadastro"
+                        placeholder="Digite seu email" aria-label="Digite seu e-mail"
+                        aria-describedby="email-cadastro" />
+                    <button type="submit" id="email-cadastro" class="btn botao-red rounded-0 border-0 text-light"
+                        data-bs-toggle="modal" data-bs-target="#Modal-novidade">Enviar</button>
+                </div>
+            </form>
+            <div class="modal fade" id="Modal-novidade" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-black">
+                            <div class="d-flex align-items-center">
+                                <div class="cor-detalhes me-3 fs-3"><i class="bi bi-check-circle"></i></div>
+                                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">E-mail cadastrado com
+                                    sucesso!</h1>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Em breve você receberá novidades exclusivas da FlaNatics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center bg-black text-bg-dark py-1">
+        <p class="py-1 mt-3">&#169;2023 Gabriel Rios. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
