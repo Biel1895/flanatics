@@ -4,7 +4,7 @@ Bem-vindo ao FlaNatics, sua loja oficial do Flamengo! Seja você um torcedor apa
 
 ## Capturas de Tela
 
-![Screenshot 1](link_para_screenshot_1.png)
+![Screenshot 1](./assets/screencapture-flanatics.png)
 
 ## Tecnologias Utilizadas
 
