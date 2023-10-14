@@ -2,7 +2,7 @@
 
 Bem-vindo ao FlaNatics, sua loja oficial do Flamengo! Seja você um torcedor apaixonado ou apenas um admirador do Mengão, temos tudo o que você precisa para mostrar seu amor pelo clube mais querido do Brasil.
 
-## Capturas de Tela
+## Captura de Tela
 
 ![Screenshot 1](./assets/screencapture-flanatics.png)
 
